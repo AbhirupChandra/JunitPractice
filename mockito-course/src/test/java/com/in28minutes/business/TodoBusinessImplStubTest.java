@@ -18,7 +18,7 @@ public class TodoBusinessImplStubTest {
 				new TodoBusinessImpl(todoServiceStub);
 		List<String> filteredTodos = 
 				todoBusinessImpl.retrieveTodosRelatedToSpring("Dummy");
-		assertEquals(2, filteredTodos.size());
+		assertEquals("Learn Spring MVC", filteredTodos.get(0));
 	}
 
 }
